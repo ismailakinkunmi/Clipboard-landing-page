@@ -17,6 +17,7 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     color: var(--Grayish-Blue);
     line-height: 1.4;
+    transition: all 2s linear;
 }
 
 h1,
@@ -41,8 +42,13 @@ abbr[title] {
     text-decoration: none;
 }
 
-.download a:hover {
-    background-color: hsl(171, 96%, 44%);
+.download .ios:hover {
+    background-color: hsl(171, 66%, 50%);
+}
+
+.download .mac:hover {
+    background-color: hsl(233, 100%, 74%);
+
 }
 
 li {
@@ -76,7 +82,7 @@ li {
 
 }
 
-.download a:last-child {
+.download .mac {
     background-color: var(--Light-Blue);
     box-shadow: 0.8px 1.2px var(--Light-Blue);
 }
@@ -122,4 +128,160 @@ ul li {
     margin-bottom: 24px;
     text-align: center;
     font-size: 1.4rem;
+}
+
+
+@media screen and (min-width: 820px) and (max-width: 1440px) {
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    main {
+        padding: 0 30px;
+    }
+
+    .history,
+    .monitor p,
+    .two-devices p {
+        width: 70%;
+        margin: auto;
+    }
+
+    .download {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .download a {
+        font-size: 1rem;
+        width: 188px;
+    }
+
+    .monitor h2 {
+        margin-bottom: 2px;
+    }
+
+    .monitor p {
+        padding: 12px;
+        margin-bottom: 24px;
+    }
+
+    .computer-device {
+        display: flex;
+        justify-content: space-between;
+        max-width: 850px;
+    }
+
+    .computer-device,
+    .computer-container {
+        transform: translateX(-55px);
+    }
+
+    .computer-device .text p {
+        width: 362px;
+        text-align: left;
+    }
+
+    .two-devices p {
+        margin-bottom: 12px;
+    }
+
+    .icon-list {
+        margin: 50px auto;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+
+    }
+
+    .icon {
+        height: 40px;
+    }
+
+    .blacklists {
+        transform: translateY(8.5px);
+    }
+
+    .blacklists,
+    .AI,
+    .sneak-preview {
+        width: 33.3%;
+    }
+
+    .brands {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 40px;
+        margin: 80px auto;
+    }
+
+    .operating-system {
+        width: 60%;
+        margin: auto;
+    }
+
+    .page-wrapper footer {
+        width: 100%;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        background-color: #eee;
+    }
+
+    footer .logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+    footer ul {
+        display: grid;
+        justify-content: end;
+        grid-template-columns: auto auto auto;
+        gap: 12px 50px;
+        padding: 0;
+
+    }
+
+    .FAQs {
+        order: 1;
+        margin-right: 70px;
+
+    }
+
+    .privacy {
+        order: 2;
+    }
+
+    .install {
+        order: 3;
+    }
+
+    .contact {
+        order: 4;
+    }
+
+    .kit {
+        order: 5;
+    }
+
+    footer ul li {
+        color: var(--Dark-Grayish-Blue);
+        font-size: 14px;
+        margin-bottom: 0;
+        display: block;
+        text-align: left;
+
+    }
+
+    footer .socialmedia {
+        margin-right: 0;
+
+    }
+
+    ion-icon {
+        color: var(--Dark-Grayish-Blue);
+        margin-right: 18px;
+    }
 }
