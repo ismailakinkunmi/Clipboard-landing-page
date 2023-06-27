@@ -194,6 +194,7 @@ ul li {
         display: flex;
         font-size: 14px;
         align-items: center;
+        max-width: 1170px;
 
     }
 
